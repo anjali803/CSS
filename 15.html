@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 1000px;
+            width: 1000px;
+            display: flex;  /*THis will initialise flex box*/
+
+            /*Flex properties for flex container*/
+
+            
+            flex-direction: row; /*by default*/
+           /* flex-direction: row-reverse; /*THe row gets reversed*/
+            /*flex-direction: column; /* items in the container aligned into colum*/
+            /*flex-direction: column-reverse; /*THe colum gets reversed*/
+
+            flex-wrap: nowrap;/*Default*/
+            /*flex-wrap: wrap;*/
+            /*flex-wrap: wrap-reverse;*/
+
+            /*Shortcut*/
+            /*flex-wrap: row-reverse wrap;*/
+
+            /*justify-content: center;
+            justify-content: space-between;
+            justify-self: space-evenly;
+            justify-content: space-around;*/
+
+            /*align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;*/
+
+        }
+
+        .item{
+            border: 3px solid violet;
+            background-color: aquamarine;
+            margin: 25px;
+            padding: 25px;
+            width: 100px;
+            height: 21px;
+        }
+        /*flex properties for flex item*/
+
+        #item1{
+            order: 4;
+            
+            /*flex-grow: 3;
+
+            flex-shrink: 2;
+
+            flex-basis: 120px;*/
+
+        }
+
+        #item2{
+            order: 1;
+
+           /* align-self: center;
+
+            align-self: flex-end;
+
+            align-self: flex-start;*/
+        }
+
+        #item3{
+            order: 3;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>This is container of the flexbox</h1>
+    <div class="container">
+
+        <div class="item" id="item1">Item 1</div>
+        <div class="item" id="item2">Item 2</div>
+        <div class="item" id="item3">Item 3</div>
+        <!-- <div class="item" id="item4">Item 4</div>
+        <div class="item" id="item5">Item 5</div>
+        <div class="item" id="item6">Item 6</div> -->
+    </div>
+</body>
+</html>
