@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOre on selector</title>
+    <style>
+        h1{
+            color: black;
+            background-color: blue;
+            font-weight: 50;
+            text-align: center;
+        }
+
+        /*div p{
+            color: black;
+            background-color: darkgrey;
+        }*/
+
+        /*div li p{
+            color: black;
+            background-color: darkgrey;
+        }*/
+
+        /* if p is direct inside the div
+        div > p{
+            color: black;
+            background-color: darkgrey;
+        }*/
+
+        /*If p is right after div 
+        div + p{
+            color: black;
+            background-color: darkgrey;
+        }*/
+
+        
+    </style>
+</head>
+<body>
+    <h1>This tuto is about More selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is a paragraph inside li</p></li>
+            </ul>
+            <p>This is the first paragraph inside div</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>this is the paragraph outside the div </p>
+</body>
+</html>
