@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transitions</title>
+    <style>
+        #box{
+            display:flex;
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: dimgray;
+            justify-content: center;
+            align-items: center;
+            /*Applying transition property*/
+            /*transition-property: background-color;*/
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        #box:hover{
+            background-color: royalblue;
+            height: 200px;
+            width: 300px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>This Is css Tansitions</h3>
+    <p>keep the cursor in the box and see th css transitions</p>
+    <div class="container">
+        <div id="box">This is myBox</div>
+    </div>
+</body>
+</html>
